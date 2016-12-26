@@ -1,0 +1,39 @@
+<ion-view view-title="Ristorante con Fusion">
+  <ion-content>
+    <div class="card">
+        <div class="item item-divider">Our Lipsmacking Culinary Creations
+            <span class="badge badge-assertive">{{vm.featured.label}}</span>
+        </div>
+        <div class="item item-thumbnail-left item-text-wrap">
+            <img ng-src="{{vm.BASE_URL + vm.featured.image}}" alt="">
+            <h2>{{vm.featured.name}}
+                <span class="badge">{{vm.featured.price | currency}}</span>
+            </h2>
+            <p>{{vm.featured.description}}</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="item item-divider">This Month's Promotions
+            <span class="badge badge-assertive">{{vm.promotion.label}}</span>
+        </div>
+        <div class="item item-thumbnail-left item-text-wrap">
+            <img ng-src="{{vm.BASE_URL + vm.promotion.image}}" alt="">
+            <h2>{{vm.promotion.name}}
+                <span class="badge">{{vm.promotion.price | currency}}</span>
+            </h2>
+            <p>{{vm.promotion.description}}</p>
+        </div>
+    </div>
+      <div class="card">
+          <div class="item item-divider">Meet our Culinary Specialists
+              <span class="badge badge-assertive">{{vm.leader.label}}</span>
+          </div>
+          <div class="item item-thumbnail-left item-text-wrap">
+              <img ng-src="{{vm.BASE_URL + vm.leader.image}}" alt="">
+              <h2>{{vm.leader.name}}</h2>
+              <h4>{{vm.leader.designation}}</h4>
+              <p>{{vm.leader.description}}</p>
+          </div>
+      </div>
+  </ion-content>
+</ion-view>
